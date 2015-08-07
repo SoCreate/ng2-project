@@ -1,0 +1,56 @@
+{
+	"version": "0.1.0",
+	"configurations": [
+		{
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "gulp client-dependencies",
+			// Type of configuration. Possible values: "node", "mono".
+			"type": "node",
+			"program": "./node_modules/gulp/bin/gulp.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			"args": ["client-dependencies"],
+			"cwd": ".",
+			"runtimeExecutable": null,
+			"runtimeArgs": [],
+			"env": { },
+			"sourceMaps": false,
+			"outDir": null
+		}, 
+		{
+			"name": "Attach",
+			"type": "node",
+			// TCP/IP address. Default is "localhost".
+			"address": "localhost",
+			// Port to attach to.
+			"port": 5858,
+			"sourceMaps": false
+		},
+		{
+			"name": "gulp",
+			"type": "node",
+			"program": "./node_modules/gulp/bin/gulp.js",
+			"stopOnEntry": false,
+			"args": [],
+			"cwd": ".",
+			"runtimeExecutable": null,
+			"runtimeArgs": [],
+			"env": { },
+			"sourceMaps": false,
+			"outDir": null
+		},
+		{
+			"name": "gulp serve",
+			"type": "node",
+			"program": "./node_modules/gulp/bin/gulp.js",
+			"stopOnEntry": false,
+			"args": ["serve"],
+			"cwd": ".",
+			"runtimeExecutable": null,
+			"runtimeArgs": [],
+			"env": { },
+			"sourceMaps": false,
+			"outDir": null
+		}
+	]
+}
