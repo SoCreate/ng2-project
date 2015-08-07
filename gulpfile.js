@@ -20,12 +20,20 @@ gulp.task('build-sandbox', function () {
 	require('./gulp_tasks/buildsandbox')();
 });
 
+gulp.task('build-dist', ['compile-ts', 'compile-sass'], function () {
+	require('./gulp_tasks/builddist')();
+});
+
 gulp.task('watch-ts', ['compile-ts'], function () {
 	gulp.watch('src/**/*.ts', ['compile-ts']);
 });
 
 gulp.task('serve', ['compile-ts', 'compile-sass'], function () {
 	require('./gulp_tasks/serve')();
+});
+
+gulp.task('serve-dist', ['build-dist'], function () {
+	require('./gulp_tasks/servedist')();
 });
 
 gulp.task('default', function () {

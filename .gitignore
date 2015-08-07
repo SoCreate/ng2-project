@@ -1,6 +1,7 @@
 node_modules/
 remote_dependencies/
 typings/
+dist/
 src/sandbox.*
 src/client-dependencies/
 src/**/*.js
