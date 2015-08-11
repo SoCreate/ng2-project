@@ -1,14 +1,13 @@
-/// <reference path="../typings/tsd.d.ts" />
 import {Component, View, bootstrap, Inject} from 'angular2/angular2';
 import {routerInjectables} from 'angular2/router';
 import {httpInjectables, Http} from 'angular2/angular2';
 import {formInjectables} from 'angular2/angular2';
 
 @Component({
-  selector: 'app'
+	selector: 'app'
 })
 @View({
-  template: `Angular2-Typescript-Starter`
+	template: `ng2-project`
 })
 export class AppComponent {
 }
